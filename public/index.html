@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Incohérences Quotidiennes</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Incohérences Quotidiennes</h1>
+        <!-- Bouton pour soumettre une incohérence -->
+        <button id="submitIncoherenceBtn" class="btn-right">Soumettre une incohérence</button>
+    </header>
+    <main>
+        <h2>Choisissez un thème</h2>
+        <div class="themes">
+            <a href="theme.html?theme=Thème 1" target="_blank" class="theme-card">Thème 1</a>
+            <a href="theme.html?theme=Thème 2" target="_blank" class="theme-card">Thème 2</a>
+            <a href="theme.html?theme=Thème 3" target="_blank" class="theme-card">Thème 3</a>
+            <a href="theme.html?theme=Thème 4" target="_blank" class="theme-card">Thème 4</a>
+        </div>
+    </main>
+
+    <!-- Modal pour soumettre une incohérence -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Soumettre une incohérence</h2>
+            <form id="incoherenceForm">
+                <label for="theme">Choisissez un thème:</label>
+                <select id="theme" name="theme" required>
+                    <option value="Thème 1">Thème 1</option>
+                    <option value="Thème 2">Thème 2</option>
+                    <option value="Thème 3">Thème 3</option>
+                    <option value="Thème 4">Thème 4</option>
+                </select>
+
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <input type="submit" value="Soumettre">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Incohérences Quotidiennes. Tous droits réservés.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
