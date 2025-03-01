@@ -1,1 +1,13 @@
-.idea
+# Fichiers et dossiers de JetBrains
+.idea/
+
+# Node.js modules et dépendances
+backend/node_modules/
+backend/package.json
+backend/package-lock.json
+# Logs et fichiers temporaires
+backend/logs/
+backend/*.log
+
+# Fichiers d'environnement sensibles
+backend/.env
